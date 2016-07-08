@@ -3,11 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <!-- build:css css/vendor.css -->
-  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-  <!-- endbuild -->
+
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1>head234er</h1>
+  <header class="header">
+  	<div class="header__wrapper clearfix">
+  		<div class="header__holder">
+  			<div class="logo">
+	  			<a href="" class="logo__wrapper">
+	  				<img src="images/logo.png" alt="logo" class="logo__img">
+	  			</a>
+	  		</div>
+	  		<ul class="header__menu">
+	  			<li>
+	  				<a href="" class="header__menu-item">
+	  					Mагазин
+	  				</a>
+	  			</li>
+	  			<li>	
+	  				<a href="" class="header__menu-item">
+	  					Продукти
+	  				</a>
+	  			</li>
+	  			<li>	
+	  				<a href="" class="header__menu-item">
+	  					Підтримка
+	  				</a>
+	  			</li>
+	  		</ul>
+  		</div>
+  		
+  		<div class="header__ctrl-block">
+  			<form action="" class="search">
+  				<div class="ui-controls ui-controls_type_icon-right ui-controls_type_inline ui-controls_type_square ui-controls_width_fixed">
+  					<input class="ui-input" placeholder="Пошук на веб-сайті Microsoft.com">
+  					<button type="submit" class="ui-icon search__button">
+  						ic
+  					</button>
+  				</div>
+  			</form>
+  			
+  			<div class="shopping-basket">
+  				<a href="" class="shopping-basket__wrapper">
+  					<span class="shopping-basket__icon">0</span>
+  					<span class="shopping-basket__count"></span>
+  				</a>
+  			</div>
+  			<a href="" class="header__login-button">Вхід</a>
+  		</div>
+  	</div>
+  </header>
 </body>

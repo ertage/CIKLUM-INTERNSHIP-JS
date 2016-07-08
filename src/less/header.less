@@ -1,3 +1,62 @@
-h1{
-	color: red;
+@import "_variables";
+.header{
+	background-color: @white-color;
+	font-size: 15px;
+	color: @dark-gray-color;
+	font-family: @header-font;
+	height: @header-height;
+	    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+.header__wrapper{
+	max-width: 1600px;
+	margin: 0 auto;
+	height: 100%;
+	&:before{
+		content: " ";
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}	
+}
+.header__holder,
+.header__menu,
+.header__menu-item{
+	display: inline-block;
+}
+.header__menu{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	vertical-align: middle;
+
+	& li{
+		display: inline-block;
+	}
+}
+.header__menu-item{
+	padding: 16px 22px;
+	color: @dark-gray-color;
+	text-decoration: none;
+	font-size: 15px;
+	transition: background-color ease-out .5s;
+
+	&:hover,
+	&:focus{
+		background-color: @light-gray-color;
+		transition: background-color 0s;
+	}
+}
+.header__ctrl-block{
+	float: right;
+}
+.header__login-button{
+	font-size: 12px;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	color: @dark-gray-color;
+	&:hover{
+		color: @hover-icon-gray-color;
+	}
 }

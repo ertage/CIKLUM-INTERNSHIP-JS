@@ -1,0 +1,22 @@
+@import "_variables";
+input-size-hook(font-size = 15px, height = 36px){
+	height: height;
+	font-size: font-size;
+	
+	.ui-input::-moz-placeholder {
+		font-size: font-size;
+		color: @black-color;
+	}
+	.ui-input::-webkit-input-placeholder {
+		font-size: font-size;
+		color: @black-color;
+	}
+	.ui-input:-moz-placeholder {
+		font-size: font-size;
+		color: @black-color;
+	}
+	.ui-input:-ms-input-placeholder {
+		font-size: font-size !important;
+		color: @black-color !important;
+	}
+}
