@@ -30,6 +30,10 @@ gulp.task('html', function() {
       .pipe(gulp.dest('dist'));
 });
 
+// gulp.task('js', function() {
+//   return gulp.src('src/**/*.js')
+//       .pipe(gulp.dest('dist'));
+// });
 gulp.task('watch', function() {
    gulp.watch('./src/**/*.*html', ['html']);
    gulp.watch('./src/**/*.less', ['styles']);

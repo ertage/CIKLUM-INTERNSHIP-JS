@@ -5,53 +5,117 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js
+"></script>
+  <script src="scripts/script.js"></script>
 </head>
 <body>
-  <header class="header">
-  	<div class="header__wrapper clearfix">
-  		<div class="header__holder">
-  			<div class="logo">
-	  			<a href="" class="logo__wrapper">
-	  				<img src="images/logo.png" alt="logo" class="logo__img">
-	  			</a>
-	  		</div>
-	  		<ul class="header__menu">
-	  			<li>
-	  				<a href="" class="header__menu-item">
-	  					Mагазин
-	  				</a>
-	  			</li>
-	  			<li>	
-	  				<a href="" class="header__menu-item">
-	  					Продукти
-	  				</a>
-	  			</li>
-	  			<li>	
-	  				<a href="" class="header__menu-item">
-	  					Підтримка
-	  				</a>
-	  			</li>
-	  		</ul>
-  		</div>
-  		
-  		<div class="header__ctrl-block">
-  			<form action="" class="search">
-  				<div class="ui-controls ui-controls_type_icon-right ui-controls_type_inline ui-controls_type_square ui-controls_width_fixed">
-  					<input class="ui-input" placeholder="Пошук на веб-сайті Microsoft.com">
-  					<button type="submit" class="ui-icon search__button">
-  						ic
-  					</button>
-  				</div>
-  			</form>
-  			
-  			<div class="shopping-basket">
-  				<a href="" class="shopping-basket__wrapper">
-  					<span class="shopping-basket__icon">0</span>
-  					<span class="shopping-basket__count"></span>
-  				</a>
-  			</div>
-  			<a href="" class="header__login-button">Вхід</a>
-  		</div>
-  	</div>
-  </header>
+	<header class="header">
+		<div class="header__wrapper clearfix">
+			<div class="header__holder">
+				<div class="logo">
+					<a href="" class="logo__wrapper">
+						<img src="images/logo.png" alt="logo" class="logo__img">
+					</a>
+				</div>
+				<ul class="header__menu">
+					<li class="header__menu-li">
+						<a href="" class="header__menu-item">
+							Mагазин
+						</a>
+						<ul class="header__submenu">
+							<li><a href="http://www.microsoftstore.com/store/msmea/home/locale.uk_UA/ThemeID.27659900/mktp.UA/Currency.UAH" class="header__submenu-item">Домашня сторінка Магазину</a></li>
+							<li><a href="" class="header__submenu-item">Office</a></li>
+							<li><a href="" class="header__submenu-item">Windows</a></li>
+						</ul>
+					</li>
+					<li class="header__menu-li">	
+						<a href="" class="header__menu-item">
+							Продукти
+						</a>
+					</li>
+					<li class="header__menu-li">	
+						<a href="" class="header__menu-item">
+							Підтримка
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="header__ctrl-block">
+				<form action="" class="search">
+					<div class="ui-controls ui-controls_type_icon-right ui-controls_type_inline ui-controls_type_square ui-controls_width_fixed">
+						<input class="ui-input" placeholder="Пошук на веб-сайті Microsoft.com">
+						<button type="submit" class="ui-icon search__button">
+							ic
+						</button>
+					</div>
+				</form>
+				
+				<div class="shopping-basket">
+					<a href="" class="shopping-basket__wrapper">
+						<span class="shopping-basket__icon">0</span>
+						<span class="shopping-basket__count"></span>
+					</a>
+				</div>
+				<a href="" class="header__login-button">Вхід</a>
+			</div>
+		</div>
+	</header>
+	<section class="hero">
+		<div class="hero__bg-wrapper"></div>
+		<div class="container">
+			<div class="hero__holder">
+				<div class="hero__left-block">
+					<h1 class="hero__header">Collaborate faster and more securely</h1>
+					<h2 class="hero__subheader">
+						Boost business productivity with the ultimate file saving and sharing tool that employees love and IT admins trust.
+					</h2>
+					<a href="https://www.dropbox.com/business/try" class="hero__button button button_type_primary button_size_large">
+						Try free for 30 days
+					</a>
+					<div class="hero__footer">
+						<span>or</span>
+						<a href="" class="hero__link ui-link">purchase now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="signup">
+		<div class="container">
+			<div class="signup__header">
+				Join over 2 million designers already using InVision. Get InVision <strong>free</strong>  forever!
+			</div>
+			<form method="POST" action="https://projects.invisionapp.com/d/signup/process" class="signup__form">
+				<div class="signup__form-element">
+					<div class="ui-controls ui-controls_type_icon-left ui-controls_size_large">
+						<input type="text" class="ui-input signup__input" placeholder="Your Name">
+						<div class="ui-icon">
+							<i class="ico-user"></i>	
+						</div>
+					</div>
+				</div>
+				<div class="signup__form-element">
+					<div class="ui-controls ui-controls_type_icon-left ui-controls_size_large">
+						<input type="text" class="ui-input signup__input" placeholder="Email Address">
+						<div class="ui-icon">
+							<i class="ico-email"></i>	
+						</div>
+					</div>
+				</div>
+				<div class="signup__form-element">
+					<div class="ui-controls ui-controls_type_icon-left ui-controls_size_large">
+						<input type="text" class="ui-input signup__input" placeholder="Create a Password">
+						<div class="ui-icon">
+							<i class="ico-lock"></i>
+						</div>
+					</div>
+				</div>
+				<div class="signup__form-element">
+					<button type="submit" class="signup__button button button_type_secondary button_size_medium">Get Started — Free Forever!</button>
+				</div>
+			</form>
+		</div>
+	</section>
 </body>

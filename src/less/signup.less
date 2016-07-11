@@ -1,0 +1,48 @@
+@import "_variables";
+.signup{
+	padding: 160px 0 145px;
+	font-family: @hero-font;
+	background-color: @extra-dark-blue-color;
+	color: @white-color;
+	text-align: center;
+}
+.signup__header{
+	font-size: 30px;
+	line-height: 52px;
+	font-weight: 300;
+	margin: 0 0 55px;
+}
+.signup__form{
+	margin-left: -10px;
+	font-size: 0;
+}
+.signup__form-element{
+	padding-left: 10px;
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+}
+.signup__input{
+	&.ui-input{
+		color: @input-text-color;
+		border-color: @input-border-color;
+		opacity: 1;
+		&:focus{
+			&::-moz-placeholder
+			&::-webkit-input-placeholder 
+			&:-moz-placeholder
+			&:-ms-input-placeholder{
+				opacity: 0.5;
+			}
+			&:hover{
+				color: @input-text-color;
+			}
+		}
+	}
+}
+input.signup__input:focus:-ms-input-placeholder {
+	opacity: 0.5;
+}
+.signup__button{
+	width: 100%;
+}
