@@ -1,0 +1,77 @@
+@import "_variables";
+.oculus__list{
+	list-style-type: none;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	li{
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		width: 33.3%;
+		background-color: @extra-dark-gray-color;
+		overflow: hidden;
+
+		&:hover{
+			.oculus__list-bg{
+				opacity: .8;
+				transform: scale(1.1, 1.1);
+			}
+		}
+	}
+}
+.oculus__list-item{
+	display: block;
+}
+.oculus__list-bg{
+	height:  300px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	opacity: .3;
+	text-align: center;
+	transition: transform .3s, opacity .3s;
+	width: 100%;
+
+	&.list-bg_type_eve{
+		background-image: url(../images/oclus-1.jpg);
+	}
+	&.list-bg_type_tale{
+		background-image: url(../images/oclus-2.jpg);
+	}
+	&.list-bg_type_story{
+		background-image: url(../images/oclus-3.jpg);
+	}
+}
+.oculus__content{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 32px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+.oculus__subheader{
+	color: @oculus-gray-color;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 16px;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.oculus__header{
+	color: @white-color;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 28px;
+	margin: 0;
+	text-align: center;
+}
