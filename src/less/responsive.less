@@ -1,0 +1,73 @@
+@import "_variables";
+@media  @smartphones, 
+		@mobile,
+		@tablets,
+		@tablets-area{
+			.hero__bg-wrapper{
+				background: url(../images/hero-bg.jpg) no-repeat;
+				background-size: cover;
+				background-position: 370px center;
+			} 
+			.hero__holder{
+				padding: 45px 0;
+				min-height: 400px;
+			}
+			.hero__left-block{
+				width: 400px;
+			}
+			.hero__header{
+				font-size: 26px;
+			}
+			.hero__subheader{
+				font-size: 16px;
+				max-width: 330px;
+			}
+			.hero__button{
+				margin-top: 40px;
+				font-size: 16px;
+				padding: 14px 40px;
+			}
+			
+}
+@media  @smartphones, 
+		@mobile{
+			.signup__form-element{
+				width: 100%;
+				margin-top: 16px;
+				&:first-child{
+					margin-top: 0;
+				}
+			}
+			.oculus__list{
+				li{
+					width: 100%;
+				}
+			}
+			.footer__shop{
+				padding-bottom: 6px;
+				border-bottom: none;
+			}
+			.footer__locate{
+				float: none;
+			}
+			.footer__legal{
+				padding-top: 13px;
+			}
+			.footer__legal-links{
+				margin-left: 0;
+			}
+			.footer__copyright{
+				line-height: 20
+			}
+		}
+
+@media  @tablets, 
+		@tablets-area{
+			.signup__form-element{
+				width: 50%;
+				margin-top: 16px;
+			}
+			.signup__form{
+				margin-top: -16px;
+			}
+		}

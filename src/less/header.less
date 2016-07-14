@@ -8,7 +8,8 @@
 	    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
 }
 .header__wrapper{
-	max-width: 1600px;
+	max-width: @max-width;
+	min-width: @min-width;
 	margin: 0 auto;
 	height: 100%;
 	padding: 0 15px;
@@ -32,7 +33,7 @@
 	font-size: 0;
 	vertical-align: middle;
 
-	& li{
+	& > li{
 		display: inline-block;
 		position: relative;
 	}
@@ -69,14 +70,13 @@
 	position: absolute;
 	//display: none;
 	z-index: 1000;
-	top: 100%;
+	
 	left: 0;
 	min-height: 0;
 	padding: 0 0 8px;
 
 	li{
 		display: block;
-		position: relative;
 	}
 }
 .header__submenu{
@@ -86,6 +86,7 @@
 	border-left: 1px solid rgba(0,0,0,0.05);
 	border-bottom: 1px solid rgba(0,0,0,0.3);
 	border-right: 1px solid rgba(0,0,0,0.1);
+	top: 100%;
 }
 .header__submenu-item,
 .header__double-submenu-item{
@@ -111,6 +112,9 @@
 .header__double-submenu{
 	background-color: @bg-gray-color;
 	display: none;
+	left: 238px;
+	width: 300px;
+	top: 0;
 }
 .header__double-submenu-item{
 

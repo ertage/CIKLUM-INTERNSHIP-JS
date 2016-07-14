@@ -29,6 +29,10 @@ gulp.task('html', function() {
   return gulp.src('src/**/*.html')
       .pipe(gulp.dest('dist'));
 });
+gulp.task('font-css', function() {
+  return gulp.src('src/**/*.css')
+      .pipe(gulp.dest('dist'));
+});
 
 // gulp.task('js', function() {
 //   return gulp.src('src/**/*.js')
@@ -46,4 +50,4 @@ gulp.task('webserver', function() {
       open: true
     }));
 });
-gulp.task('default', ['styles', 'fonts', 'images', 'html', 'watch', 'webserver']);
+gulp.task('default', ['styles', 'fonts', 'images', 'html', 'font-css', 'watch', 'webserver']);
