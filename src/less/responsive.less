@@ -31,6 +31,52 @@
 }
 @media  @smartphones, 
 		@mobile{
+			.body{
+				position: relative;
+			}
+			.heeader__menu-toggle{
+				display: inline-block;
+				&.active{
+					background-color: @light-gray-color;
+				}
+			}
+			.header__menu{
+				display: none;
+				&.open{
+					display: block;
+					background-color: @light-gray-color;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					top: 48px;
+					z-index: 5;
+					width: 300px;
+					.header__menu-item{
+						display: block;
+						&:hover{
+							background-color: @bg-gray-color;
+						}
+					}
+					.header__submenu{
+						width: 100%;
+						position: relative;
+						background-color: @bg-gray-color;
+					}
+					.header__submenu-item{
+						&:hover{
+							background-color: @gray-extra-light;
+						}
+					}
+					.header__double-submenu{
+						position: relative;
+						left: 0;
+					}
+
+				}
+				&> li{
+					display: block;
+				}
+			}
 			.signup__form-element{
 				width: 100%;
 				margin-top: 16px;
@@ -70,4 +116,58 @@
 			.signup__form{
 				margin-top: -16px;
 			}
-		}
+}
+		
+@media  @smartphones, 
+		@mobile,
+		@tablets{
+			.search{
+				width: 44px;
+				height: 48px;
+				line-height: 48px;
+				display: inline-block;
+				vertical-align: middle;
+				text-align: center;
+
+				&:hover{
+					backgroynd-color: @light-gray-color;
+					transition: background-color 0s;
+					outline: none;
+				}
+				.ui-input{
+					display: none;
+				}
+				.ui-controls{
+					width: 100%;
+				}
+				.ui-icon{
+					font-size: 21px;
+					color: @icon-gray-color;
+				    border: none;
+				    background-color: transparent;
+					transition: background-color .3s ease-out;
+					position: relative;
+					margin-top: -3px;
+					
+				}
+			}
+			.shopping-basket{
+				display: none;
+			}
+}
+@media  
+		@tablets,
+		@tablets-area,
+		@desktop,
+		@largedesktop{
+			.header__menu-item{
+				&:after{
+					top: 24px;
+					right: 12px;
+					position: static;
+					display: inline-block;
+					margin-left: .3em;
+					vertical-align: middle;
+				}
+			}			
+}

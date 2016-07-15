@@ -42,7 +42,6 @@ gulp.task('watch', function() {
   gulp.watch('./src/**/*.*html', ['html']);
   gulp.watch('./src/**/*.less', ['styles']);
   gulp.watch('./src/**/*.js', ['js']);
-
 });
 
 gulp.task('webserver', function() {
